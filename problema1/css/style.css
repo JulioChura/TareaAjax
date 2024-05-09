@@ -71,3 +71,19 @@ html {
     font-size: 3rem;
     color: wheat;
 }
+
+.container {
+    margin: 0 auto;
+    width: 100rem;
+    max-width: 80%;
+    background-color: rgb(228, 223, 223);
+    height: 100vh;
+
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    padding-top: 3rem;
+}
