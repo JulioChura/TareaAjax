@@ -10,9 +10,6 @@ html {
 .header {
     margin: 0;
     padding: 0;
-    background-image: url("../img/3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .header__nav {
     background-color: black;
@@ -40,17 +37,37 @@ html {
 }
 
 .header__descripcion {
+    height: 40rem;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .header__descripcion-titulo {
+    text-align: center;
     font-size: 3.5rem;    
-    color: white;
+    color: rgb(253, 253, 253);
 }
 
+.header__descripcion-texto {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header__descripcion-mensaje {
+    text-align: center;
+    margin: 1rem;
     font-size: 3rem;
+    color: wheat;
 }
