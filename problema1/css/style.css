@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between
+}
+
+.header__nav-titulo {
+    margin-left: 3rem;
+    font-size: 4rem;
+}
+
+.header__nav__enlaces {
+    width: 40rem;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.header__iconos {
+    height: 50px;
+}
+
+.header__descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__descripcion-titulo {
+    font-size: 3.5rem;    
+    color: white;
+}
+
+.header__descripcion-mensaje {
+    font-size: 3rem;
+}
