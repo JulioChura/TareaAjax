@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function showRegions() {
-    let body = "<option selected>Open this select menu</option>"
+    let body = '<option selected class="options">Open this select menu</option>'
     for(item of data) {
-        body += `<option value="1">´${item.region}</option>`;
+        body += `<option class="options" value="1">${item.region}</option>`;
     }
     return body;
 }
