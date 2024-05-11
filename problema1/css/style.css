@@ -11,6 +11,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
 .header__nav {
     background-color: black;
     color: white;
@@ -21,14 +22,14 @@ html {
 .header__nav-titulo {
     margin-left: 3rem;
     font-size: 4rem;
+    height: 5rem;
 }
 
 .header__nav__enlaces {
     width: 40rem;
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -46,13 +47,13 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .header__descripcion-titulo {
     text-align: center;
     font-size: 3.5rem;    
     color: rgb(253, 253, 253);
+    
 }
 
 .header__descripcion-texto {
@@ -72,18 +73,55 @@ html {
     color: wheat;
 }
 
+/* Estilos del doc donde se mostrara la informcion relevante */
 .container {
     margin: 0 auto;
     width: 100rem;
     max-width: 80%;
     background-color: rgb(228, 223, 223);
     height: 100vh;
-
 }
+
 
 .opciones {
     display: flex;
     justify-content: center;
-    gap: 20rem;
     padding-top: 3rem;
+    font-size: 2.3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3rem;
+        font-size: 2.3rem;
+    }
+}
+.options{
+    font-size: 1.7rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.opciones__lado {
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+
+
+
+.options__label {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/*  */

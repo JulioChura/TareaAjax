@@ -21,6 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function showGraphic(value) {
     console.log(value)
+    let box = document.getElementById("grafico2");
+    const name = ["Juan", "Maria"];
+    const ages = [42,21];
+
+    const chartjs = new Chart(box, {
+        type: 'bar',
+        data: {
+            labels:name,
+            datasets: [{
+                label: 'EDad',
+                data: ages
+            }]
+        }
+    })
 }
 
 function showRegions() {
