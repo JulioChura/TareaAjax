@@ -19,9 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
-function showGraphic(value) {
-    console.log(value)
-    let box = document.getElementById("grafico2");
+
+
+function showGraphic(value, id) {
+    
+    let box = document.getElementById(id);
+    
     const name = ["Juan", "Maria"];
     const ages = [42,21];
 
@@ -30,7 +33,7 @@ function showGraphic(value) {
         data: {
             labels:name,
             datasets: [{
-                label: 'EDad',
+                label: 'Edad',
                 data: ages
             }]
         }

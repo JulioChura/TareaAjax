@@ -32,15 +32,15 @@
         <div class="opciones">
             <div class="opciones__lado">
                 <label for="" class="opciones__label">Seleccione una región </label>
-                <select id="regions1" class=" options" >
+                <select id="regions1" class=" options" onchange="showGraphic(this.value,'grafico1')">
                 </select>
-                <canvas id="grafico2¿">
+                <canvas id="grafico1">
 
                 </canvas>  
             </div> 
             <div class="opciones__lado">
                 <label for="">Seleccione una región</label>
-                <select id="regions2" class="options" onchange="showGraphic(this.value)">
+                <select id="regions2" class="options" onchange="showGraphic(this.value, 'grafico2')">
                 </select>
                 <canvas id="grafico2">
 
