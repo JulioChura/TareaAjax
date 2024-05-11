@@ -1,4 +1,4 @@
-let data;
+var data;
 document.addEventListener('DOMContentLoaded', function() {
     const url = "../data.json";
     const xhttp = new XMLHttpRequest();
@@ -12,3 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 })
+console.log(data);
