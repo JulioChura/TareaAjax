@@ -21,19 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function showGraphic(value, id) {
+function showGraphic(value, idBox) {
+    console.log(data)
+    let box = document.getElementById(idBox);
     
-    let box = document.getElementById(id);
-    
-    const name = ["Juan", "Maria"];
+    var date = [];
+    for(let i = 0, index = 0; index < (data[value].confirmed.length)/5; i=i+5, index++) {
+        date[index] = data[value].confirmed[i];
+    }
+    console.log(date)
+
     const ages = [42,21];
 
     const chartjs = new Chart(box, {
         type: 'bar',
         data: {
-            labels:name,
+            labels: date,
             datasets: [{
-                label: 'Edad',
+                label: 'date',
                 data: ages
             }]
         }
