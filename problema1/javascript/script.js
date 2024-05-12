@@ -25,22 +25,33 @@ function showGraphic(value, idBox) {
     console.log(data)
     let box = document.getElementById(idBox);
     
-    var date = [];
-    for(let i = 0, index = 0; index < (data[value].confirmed.length)/5; i=i+5, index++) {
-        date[index] = data[value].confirmed[i];
+    let date = [];
+    let info = [];
+    for(let i = 10, index = 0; i < (data[value].confirmed.length); i=i+3, index++) {
+        date[index] = data[value].confirmed[i].date;
+        info[index] = data[value].confirmed[i].value;
     }
-    console.log(date)
-
-    const ages = [42,21];
+    console.log(date);
+    console.log(info);
+    
 
     const chartjs = new Chart(box, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: date,
             datasets: [{
-                label: 'date',
-                data: ages
+                label: "date",
+                data: info,
             }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
         }
     })
 }

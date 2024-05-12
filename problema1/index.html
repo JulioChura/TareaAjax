@@ -34,20 +34,17 @@
                 <label for="" class="opciones__label">Seleccione una región </label>
                 <select id="regions1" class=" options" onchange="showGraphic(this.value,'grafico1')">
                 </select>
-                <canvas id="grafico1">
-
-                </canvas>  
+                <canvas id="grafico1" class="opciones__lado" width="570"></canvas>  
             </div> 
             <div class="opciones__lado">
                 <label for="">Seleccione una región</label>
                 <select id="regions2" class="options" onchange="showGraphic(this.value, 'grafico2')">
                 </select>
-                <canvas id="grafico2">
 
-                </canvas>
-            </div>
+                <canvas id="grafico2" class="opciones__lado" width="570"></canvas>
+                
+            <div>
         </div>
-        <button onclick="getData()">Generar</button>
     </div>
     <script src="javascript/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

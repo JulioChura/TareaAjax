@@ -76,21 +76,21 @@ html {
 /* Estilos del doc donde se mostrara la informcion relevante */
 .container {
     margin: 0 auto;
-    width: 100rem;
-    max-width: 80%;
+    width:95%;
     background-color: rgb(228, 223, 223);
-    height: 100vh;
+    padding-bottom: 4rem;
 }
 
 
 .opciones {
     display: flex;
     justify-content: center;
+    gap:4rem;
     padding-top: 3rem;
     font-size: 2.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1440px) {
     .opciones {
         display: flex;
         flex-direction: column;
@@ -102,7 +102,6 @@ html {
 .options{
     font-size: 1.7rem;
     background-color: #fff;
-    border: 1px solid #ced4da;
     border-radius: .25rem;
     padding: .375rem .75rem;
     font-size: 1.9rem;
