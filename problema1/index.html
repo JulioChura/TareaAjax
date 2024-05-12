@@ -29,19 +29,24 @@
     
     
     <div class="container">
-        <div class="opciones">
+        <div class="opciones" >
             <div class="opciones__lado">
                 <label for="" class="opciones__label">Seleccione una región </label>
-                <select id="regions1" class=" options" onchange="showGraphic(this.value,'grafico1')">
+                <select id="regions1" class=" options" onchange="showGraphic(this.value,'1')">
                 </select>
-                <canvas id="grafico1" class="opciones__lado" width="570"></canvas>  
+                <div id="box1">
+                    <canvas id="1" class="opciones__lado" width="570"></canvas> 
+                </div>
+                 
             </div> 
             <div class="opciones__lado">
                 <label for="">Seleccione una región</label>
-                <select id="regions2" class="options" onchange="showGraphic(this.value, 'grafico2')">
+                <select id="regions2" class="options" onchange="showGraphic(this.value, '2')">
                 </select>
-
-                <canvas id="grafico2" class="opciones__lado" width="570"></canvas>
+                <div id="box2">
+                    <canvas id="2" class="opciones__lado" width="570"></canvas>
+                </div>
+                
                 
             <div>
         </div>

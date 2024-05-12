@@ -19,22 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
-
-
 function showGraphic(value, idBox) {
-    console.log(data)
-    let box = document.getElementById(idBox);
     
+    let graf = document.getElementById("box"+idBox);
+    graf.innerHTML = `<canvas id='${idBox}'  class='opciones__lado' width='570'></canvas>`;
+    let box = document.getElementById(idBox);
     let date = [];
     let info = [];
     for(let i = 10, index = 0; i < (data[value].confirmed.length); i=i+3, index++) {
         date[index] = data[value].confirmed[i].date;
         info[index] = data[value].confirmed[i].value;
     }
-    console.log(date);
-    console.log(info);
-    
-
     const chartjs = new Chart(box, {
         type: 'line',
         data: {
@@ -43,20 +38,12 @@ function showGraphic(value, idBox) {
                 label: "date",
                 data: info,
             }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
         }
     })
 }
 
 function showRegions() {
+   
     let index = 0;
     let body = '<option selected class="options">Open this select menu</option>'
     for(item of data) {
