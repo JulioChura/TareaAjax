@@ -12,15 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             let section2 = document.getElementById('regions2');
             section1.innerHTML = showRegions();
             section2.innerHTML = showRegions();
-
-            //Ahora vamos a recoger las opciones
-            
         }
     }
 })
 
 function showGraphic(value, idBox) {
-    
     let graf = document.getElementById("box"+idBox);
     graf.innerHTML = `<canvas id='${idBox}'  class='opciones__lado' width='570'></canvas>`;
     let box = document.getElementById(idBox);
@@ -43,7 +39,6 @@ function showGraphic(value, idBox) {
 }
 
 function showRegions() {
-   
     let index = 0;
     let body = '<option selected class="options">Open this select menu</option>'
     for(item of data) {
