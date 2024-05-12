@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos comparativos </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__nav">
+            <h1 class="header__nav-titulo"><a href="#" class="nombre">JChura</a></h1>
+            <div class="header__nav__enlaces">
+                <a href="https://github.com/JulioChura"><img class="header__iconos" src="img/git.png" alt=""></a>
+                <a href="mailto:jchuraaca@unsa.edu.pe"><img class="header__iconos" src="img/wp.png" alt=""></a>
+                <a href="#"><img class="header__iconos" src="img/mail.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="header__descripcion">
+            <div class="header__descripcion-texto">
+                <h1 class="header__descripcion-titulo">Informacion sobre el COVID en el Perú</h1>
+                <p class="header__descripcion-mensaje">"Juntos salimos de esto, unidos salimos de las adversidades"</p>
+            </div>
+        </div>   
+    </header>
+    
+    
+    <div class="container">
+        <div class="opciones" >
+            <div class="opciones__lado">
+                <label for="" class="opciones__label">Seleccione una región </label>
+                <select id="regions1" class=" options" onchange="showGraphic(this.value,'1')">
+                </select>
+                <div id="box1">
+                    <canvas id="1" class="opciones__lado" width="570"></canvas> 
+                </div>
+                 
+            </div> 
+            <div class="opciones__lado">
+                <label for="">Seleccione una región</label>
+                <select id="regions2" class="options" onchange="showGraphic(this.value, '2')">
+                </select>
+                <div id="box2">
+                    <canvas id="2" class="opciones__lado" width="570"></canvas>
+                </div>
+                
+                
+            <div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between
+}
+ 
+.header__nav-titulo 
+.nombre {
+    text-decoration: none;
+    margin-left: 3rem;
+    font-size: 4rem;
+    height: 5rem;
+    color: white;
+}
+
+.header__nav__enlaces {
+    width: 40rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__iconos {
+    height: 50px;
+}
+
+.header__descripcion {
+    height: 40rem;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__descripcion-titulo {
+    text-align: center;
+    font-size: 3.5rem;    
+    color: rgb(253, 253, 253);
+    
+}
+
+.header__descripcion-texto {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__descripcion-mensaje {
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+    color: wheat;
+}
+
+/* Estilos del doc donde se mostrara la informcion relevante */
+.container {
+    margin: 0 auto;
+    width:95%;
+    background-color: rgb(228, 223, 223);
+    padding-bottom: 4rem;
+}
+
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+    padding-top: 3rem;
+    font-size: 2.3rem;
+}
+
+@media screen and (max-width:1440px) {
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3rem;
+        font-size: 2.3rem;
+    }
+}
+.options{
+    font-size: 1.7rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.opciones__lado {
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.options__label {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
