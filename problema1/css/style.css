@@ -18,11 +18,14 @@ html {
     display: flex;
     justify-content: space-between
 }
-
-.header__nav-titulo {
+ 
+.header__nav-titulo 
+.nombre {
+    text-decoration: none;
     margin-left: 3rem;
     font-size: 4rem;
     height: 5rem;
+    color: white;
 }
 
 .header__nav__enlaces {
@@ -115,12 +118,8 @@ html {
     margin-left: 4rem;
 }
 
-
-
-
 .options__label {
     font-size: 1.7rem;
     font-weight: bold;
 }
 
-/*  */
