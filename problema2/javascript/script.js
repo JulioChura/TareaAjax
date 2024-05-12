@@ -21,17 +21,19 @@ function showGraphic() {
     
     let dictionary = [];
     for(let index = 0; index < data.length; index++) {
-        let temDic;
-        temDic ={label: data[index].region}
-        let values = [];
-        for (let i = 6, indice = 0; indice < 65/3; i=i+2, indice++) {
-            console.log(data[index].confirmed[i].value)
-            values[indice] = data[index].confirmed[i].value;
-            fechas[indice]  = data[index].confirmed[i].date;
+        if (data[index].region !== 'Lima' && data[index].region !== 'Callao') {
+            let temDic = { label: data[index].region };
+            let values = [];
+
+            for (let i = 6, indice = 0; indice < 65 / 3; i = i + 2, indice++) {
+                console.log(data[index].confirmed[i].value);
+                values[indice] = data[index].confirmed[i].value;
+                fechas[indice] = data[index].confirmed[i].date;
+            }
+            temDic.data = values;
+            dictionary.push(temDic); 
+            date = data[index].region;
         }
-        temDic.data = values;
-        dictionary[index] = temDic;
-        date = data[index].region;
     }
     console.log(dictionary[3])
     console.log(fechas)
