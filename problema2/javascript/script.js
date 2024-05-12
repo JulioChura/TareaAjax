@@ -41,10 +41,7 @@ function showGraphic() {
         data: {
             labels: fechas,
             
-            datasets: [{
-                label: "hola",
-                data: [2,3,4,3,2,1]
-            }]
+            datasets: [...dictionary]
         }
     })
 }
